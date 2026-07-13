@@ -1,0 +1,12 @@
+class Solution {
+    public int numWaterBottles(int numb, int nume) {
+        int ans=numb;
+        while(numb>=nume){
+            int nb=numb/nume;
+            int rb=numb%nume;
+            ans=ans+nb;
+            numb=nb+rb;
+        }
+        return ans;
+    }
+}
